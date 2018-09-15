@@ -5,7 +5,8 @@ import Teacher from '@/components/Teacher'
 import Class from '@/components/Class'
 import Classroom from '@/components/Classroom'
 import Postgraduate from '@/components/Postgraduate'
-
+import Basicinfo from '@/components/Basicinfo'
+import Credits from '@/components/Credits'
 
 Vue.use(Router)
 
@@ -35,6 +36,14 @@ export default new Router({
     path: '/postgraduate',
     name: 'Postgraduate ',
     component: Postgraduate 
-   }
+   },{
+     path:'/basicinfo',
+     name:'Basicinfo',
+     component: Basicinfo
+   },{
+    path:'/credits',
+    name:'Credits',
+    component: Credits
+  }
   ]
 })
